@@ -21704,6 +21704,25 @@ Size: 26073
 SHA256sum: 532b482de66006eb3fec1302d6a766f701c4bad9a5d7bd47956ae02aecb5ad17
 Description:  JavaScript Robotics, By Your Command Next generation robotics framework with support for 36 different platforms Get Started
 
+Package: node-mozilla-iot-gateway
+Version: 0.3.1-1
+Depends: libc, libssp, librt, libpthread, node, node-npm, libopenzwave, python, openssl-util
+Source: feeds/packages/lang/node-mozilla-iot-gateway
+License: MPL-2.0
+LicenseFiles: LICENSE
+Section: lang
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: x86_64
+Installed-Size: 43507753
+Filename: node-mozilla-iot-gateway_0.3.1-1_x86_64.ipk
+Size: 43428807
+SHA256sum: 56dedad1f3e8bf7bf8ef6ea777069d8cc85cc7aa099779f1c3247653bd7deb8a
+Description:  Build Your Own Web of Things Gateway. The "Web of Things" (WoT) is the
+ idea of taking the lessons learned from the World Wide Web and applying
+ them to IoT. It's about creating a decentralized Internet of Things by
+ giving Things URLs on the web to make them linkable and discoverable,
+ and defining a standard data model and APIs to make them interoperable.
+
 Package: node-npm
 Version: v8.10.0-3
 Depends: libc, libssp, librt, libpthread, node
@@ -41257,10 +41276,10 @@ LicenseFiles: LICENSE
 Section: multimedia
 Maintainer: Adrian Panella <ianchi74@outlook.com>
 Architecture: x86_64
-Installed-Size: 2140390
+Installed-Size: 2140240
 Filename: youtube-dl_2018.03.10-1_x86_64.ipk
-Size: 2141716
-SHA256sum: 3d99f436bccf28b28b4f09f385019e95732b71adcc923ee162c3e7db88db1853
+Size: 2141568
+SHA256sum: 01a088fedcbe62fae77d1912f68e74514ba7fc20746c853d68247daa20fbb781
 Description:  youtube-dl is a small command-line program to download videos 
  from YouTube.com and a few more sites. 
  It requires the Python interpreter.

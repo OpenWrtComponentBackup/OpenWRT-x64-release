@@ -1,7 +1,7 @@
 base-files - 194.2-r7676-cddd7b4c77
 block-mount - 2018-12-28-af93f4b8-3
 busybox - 1.28.4-2
-ca-certificates - 20180409-2
+ca-bundle - 20180409-2
 dnsmasq-full - 2.80-1.2
 dropbear - 2017.75-7.1
 e100-firmware - 2017-09-06-a61ac5cf-1
