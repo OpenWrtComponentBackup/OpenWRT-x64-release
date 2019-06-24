@@ -4094,6 +4094,17 @@ Size: 1651
 SHA256sum: 843f57e2d86a7656d1a78ee69befb7b2af132641134ea220a9cf8e24d8d4c57f
 Description:  LuCI support for ttyd
 
+Package: luci-app-unblockmusic
+Version: 1-36
+Depends: libc, libssp, librt, libpthread, node
+Section: luci
+Architecture: all
+Installed-Size: 35963
+Filename: luci-app-unblockmusic_1-36_all.ipk
+Size: 36849
+SHA256sum: 17c7c6837462a61b9dbd0b2fd40a7118dc01623182fa3dd27288fe8d6db7a933
+Description:  LuCI support for Unblock NeteaseCloudMusic
+
 Package: luci-app-usb-printer
 Version: 1.0-2
 Depends: libc, libssp, librt, libpthread, p910nd, kmod-usb-printer
