@@ -41276,10 +41276,10 @@ LicenseFiles: LICENSE
 Section: multimedia
 Maintainer: Adrian Panella <ianchi74@outlook.com>
 Architecture: x86_64
-Installed-Size: 2140240
+Installed-Size: 2140370
 Filename: youtube-dl_2018.03.10-1_x86_64.ipk
-Size: 2141568
-SHA256sum: 01a088fedcbe62fae77d1912f68e74514ba7fc20746c853d68247daa20fbb781
+Size: 2141697
+SHA256sum: edb193d0b20965af87471152960fea3e47d2104d6eb62b178619cb90a9dbcde0
 Description:  youtube-dl is a small command-line program to download videos 
  from YouTube.com and a few more sites. 
  It requires the Python interpreter.

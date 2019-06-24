@@ -1329,17 +1329,17 @@ SHA256sum: 9856303de19a380fda2677fefb3bf4fdb2ef57d6a4d609adb40ebbbdf13436ec
 Description:  Ext2 Filesystem debugger
 
 Package: default-settings
-Version: 1.0-38
+Version: 1.1-41
 Depends: libc, libssp, librt, libpthread
 Source: /home/wang/Desktop/lede-lean/package/lean/default-settings
 License: GPLv3
 LicenseFiles: LICENSE
 Section: luci
 Architecture: all
-Installed-Size: 11734
-Filename: default-settings_1.0-38_all.ipk
-Size: 12488
-SHA256sum: 1e8838b933314db6c12b1f12ec728faf5a28edf4cc88d526fe069cfe1e84edb2
+Installed-Size: 11728
+Filename: default-settings_1.1-41_all.ipk
+Size: 12484
+SHA256sum: d3dcc0bef723a6c37a5a241cc6e5553407cff851ad7f6eb0b1650d535c4dd894
 Description:  Language Support Packages.
 
 Package: devlink
@@ -1769,24 +1769,17 @@ SHA256sum: 6bbefd18ae75d591132886f2109e564b37ff404f4be45859173ffff1918ebbaa
 Description:  Utility to partially read the TFFS filesystems.
 
 Package: frpc
-Version: 0.26.0-1
+Version: 0.27.0-1
 Depends: libc, libssp, librt, libpthread
 Source: /home/wang/Desktop/lede-lean/package/lean/frpc
 License: Apache-2.0
-LicenseFiles: LICENSE
 Section: net
-Require-User: frp=7000:frp=7000
-Maintainer: Xingwang Liao <kuoruan@gmail.com>
 Architecture: x86_64
-Installed-Size: 3094972
-Filename: frpc_0.26.0-1_x86_64.ipk
-Size: 3085945
-SHA256sum: 3caf1bcc06a8e4d72e7f0f35d64366153e4efc6f0b73ed563d762c130d75256c
-Description:  frp is a fast reverse proxy to help you expose a local server behind a NAT or firewall
- to the internet. As of now, it supports tcp & udp, as well as httpand https protocols,
- where requests can be forwarded to internal services by domain name.
- 
- This package contains the frpc.
+Installed-Size: 3967982
+Filename: frpc_0.27.0-1_x86_64.ipk
+Size: 3959458
+SHA256sum: 33a8c1d874eef9ac319dac6f90214ca42ee5fd6c9dd50c2b8439fad7ae01cfb0
+Description:  frp is a fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet
 
 Package: frps
 Version: 0.26.0-1
@@ -2791,6 +2784,18 @@ Filename: k3wifi_1-1_x86_64.ipk
 Size: 523554
 SHA256sum: 0f4a345f9279a82a22a1a1a3f70566270c9b1f085af1c9281a88b9f602f818c6
 Description:  k3wifi fw
+
+Package: kcptun-client
+Version: 20190515-2
+Depends: libc, libssp, librt, libpthread
+Source: /home/wang/Desktop/lede-lean/package/lean/kcptun
+Section: net
+Architecture: x86_64
+Installed-Size: 2026897
+Filename: kcptun-client_20190515-2_x86_64.ipk
+Size: 2023069
+SHA256sum: 2b8b061f041a48fd325deb694c9d0aff63650797225bd570ed714f2ca5f71eed
+Description:  Kcptun is a Fast and Reliable ARQ Protocol tunnel
 
 Package: kdump
 Version: 2.0.16-1
@@ -4331,15 +4336,15 @@ Description:  Lua is a powerful light-weight programming language designed for e
  This package contains the Lua language compiler.
 
 Package: luci-app-accesscontrol
-Version: 1-6
+Version: 1-11
 Depends: libc, libssp, librt, libpthread
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-accesscontrol
 Section: luci
 Architecture: all
-Installed-Size: 2422
-Filename: luci-app-accesscontrol_1-6_all.ipk
-Size: 3125
-SHA256sum: b88d86ff28ab8e7333f6a2cfe6a5b83c65a6d82259bbbbc2ff1029e10c07cf19
+Installed-Size: 2754
+Filename: luci-app-accesscontrol_1-11_all.ipk
+Size: 3556
+SHA256sum: a7e5e75eb0967384b54bbff90b851e906f1d1e6547e512ab53c6e056ea755188
 Description:  LuCI Access Control Configuration
 
 Package: luci-app-adbyby-plus
@@ -4355,15 +4360,15 @@ SHA256sum: 5d6e71bcea13ef87b59136ae7583c12ef19963bd5127f271de499e30d435c07e
 Description:  LuCI support for Adbyby
 
 Package: luci-app-amule
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, amule
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-amule
 Section: luci
 Architecture: all
 Installed-Size: 12863
-Filename: luci-app-amule_git-19.134.62305-ac518f4-1_all.ipk
-Size: 13669
-SHA256sum: 250f4a281d6848e4800600aee3b3d91cf033f81a7b15f1d38c89fe67cd4ba0d7
+Filename: luci-app-amule_git-19.170.36760-c3eb916-1_all.ipk
+Size: 13670
+SHA256sum: 214f430d6c3de87bd2193c30555838e6f5bb3c987a1fcdb5ed90ffe167181c99
 Description:  LuCI support for Amule
 
 Package: luci-app-arpbind
@@ -4415,6 +4420,18 @@ Filename: luci-app-dnspod_1.0-1_all.ipk
 Size: 3999
 SHA256sum: 0a54b572c4e1c1818ed57161e95accd87357bc828fe798bcb8ba7b324fe1a5d0
 Description:  auto get pub ip,dnspod ddns,must include curl with ssl
+
+Package: luci-app-familycloud
+Version: 1-5
+Depends: libc, libssp, librt, libpthread, coreutils, coreutils-nohup, libreadline, libcurl, libopenssl, bash, curl, wget, openssl-util, ca-certificates, ca-bundle
+Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-familycloud
+Section: luci
+Architecture: all
+Installed-Size: 4224
+Filename: luci-app-familycloud_1-5_all.ipk
+Size: 5063
+SHA256sum: 5adf8cf311cc329ea7f7c36b3c02424cb9c928f5e9d7f20e107683986dd20ef1
+Description:  LuCI support for FamilyCloudSpeeder
 
 Package: luci-app-filetransfer
 Version: 1-2
@@ -4501,6 +4518,18 @@ Size: 12855
 SHA256sum: 495451454b27584e22ad3845fb7d3f9afa6089664c38d1201d9d9abe39292589
 Description:  A luci app for kcptun
 
+Package: luci-app-kodexplorer
+Version: 1.0-5-20190518
+Depends: libc, libssp, librt, libpthread, nginx, zoneinfo-asia, php7, php7-fpm, php7-mod-curl, php7-mod-gd, php7-mod-iconv, php7-mod-json, php7-mod-mbstring, php7-mod-opcache, php7-mod-session, php7-mod-zip
+Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-kodexplorer
+Section: luci
+Architecture: all
+Installed-Size: 7350
+Filename: luci-app-kodexplorer_1.0-5-20190518_all.ipk
+Size: 8228
+SHA256sum: 9a554b6ba65a26b23b656c4fedb76d465c412ff82b70ce0151ece1700b03ad13
+Description:  LuCI support for KodExplorer
+
 Package: luci-app-mwan3helper
 Version: 1-2
 Depends: libc, libssp, librt, libpthread, luci-app-mwan3, pdnsd-alt, dnsmasq-full, ipset
@@ -4573,6 +4602,18 @@ Size: 2943
 SHA256sum: fa0cc9ac945344664c375d4bcfd3eefa5d2ab1de31e2253696344c9572c697d2
 Description:  LuCI support for PPTP VPN Server
 
+Package: luci-app-qbittorrent
+Version: 1.0-2
+Depends: libc, libssp, librt, libpthread, qBittorrent
+Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-qbittorrent
+Section: luci
+Architecture: all
+Installed-Size: 1808
+Filename: luci-app-qbittorrent_1.0-2_all.ipk
+Size: 2535
+SHA256sum: 4fa13b161f8fea5426c41bd0d53bf2e0dffd020a38395c0a2e612df3e6684d79
+Description:  This package contains LuCI configuration pages for qbittorrent-nox
+
 Package: luci-app-ramfree
 Version: 1.0-1
 Depends: libc, libssp, librt, libpthread
@@ -4586,15 +4627,15 @@ SHA256sum: 3a9b860afe52adaafdda038c85d9815f7f7e71c7f9401a17450c4a42e9f0fc98
 Description:  luci-app-ramfree
 
 Package: luci-app-samba4
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, samba4-server
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1767
-Filename: luci-app-samba4_git-19.134.62305-ac518f4-1_all.ipk
-Size: 2496
-SHA256sum: 8a2a23e9c75d9a88861a813492f3b03411a4a2aa54705702a07094c8b58d9b58
+Filename: luci-app-samba4_git-19.170.36760-c3eb916-1_all.ipk
+Size: 2500
+SHA256sum: 8ff0413892103e1a683717ddbed1b30b8594b4593a38f2003dd7952f32fe84c5
 Description:  Network Shares - Samba 4 SMB/CIFS module
 
 Package: luci-app-shadowsocksR-GFW
@@ -4630,13 +4671,13 @@ Description:  LuCI Support for shadowsocksr-libev Client and Server.
 Package: luci-app-ssr-plus
 Version: 1-96
 Depends: libc, libssp, librt, libpthread, shadowsocksr-libev-alt, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, coreutils, coreutils-base64, bash, pdnsd-alt, wget, shadowsocks-libev-ss-redir, v2ray, kcptun-client, shadowsocksr-libev-server, shadowsocksr-libev-ssr-local
-Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-ssr-plus
+Source: package/luci-app-ssr-plus
 Section: luci
 Architecture: all
-Installed-Size: 96058
+Installed-Size: 94946
 Filename: luci-app-ssr-plus_1-96_all.ipk
-Size: 96179
-SHA256sum: b6d6f73e37ddfd354c560bb8f2703e11f63bfdd65fc2ed411ca32f0fd7c128c7
+Size: 95058
+SHA256sum: e7977c0d2e614da0bc06e8d92bd43a725caf55e62d396181ed3dfacb73aff670
 Description:  SS/SSR/V2Ray LuCI interface
 
 Package: luci-app-ssrserver-python
@@ -4678,14 +4719,14 @@ Description:  LuCI support for ttyd
 Package: luci-app-unblockmusic
 Version: 1-36
 Depends: libc, libssp, librt, libpthread, node
-Source: package/luci-app-unblockmusic
+Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-unblockmusic
 Section: luci
 Maintainer: <https://github.com/maxlicheng/luci-app-unblockmusic>
 Architecture: all
 Installed-Size: 35963
 Filename: luci-app-unblockmusic_1-36_all.ipk
-Size: 36849
-SHA256sum: 17c7c6837462a61b9dbd0b2fd40a7118dc01623182fa3dd27288fe8d6db7a933
+Size: 36871
+SHA256sum: 154034ac7dc0b441f8a411368cc9d229e0e95158b885ebd98024dc8ba75faa3f
 Description:  LuCI support for Unblock NeteaseCloudMusic
 
 Package: luci-app-usb-printer
@@ -4775,27 +4816,27 @@ SHA256sum: 3b71fb67b0e4ca79f57e7b534e0214ae914f6a30eb815e0ec3f8623606398b4f
 Description:  LuCI Support for XLNetAcc.
 
 Package: luci-app-zerotier
-Version: 1.0-13
+Version: 1.0-15
 Depends: libc, libssp, librt, libpthread, zerotier
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-zerotier
 Section: luci
 Architecture: all
-Installed-Size: 3172
-Filename: luci-app-zerotier_1.0-13_all.ipk
-Size: 3967
-SHA256sum: 2448d96485f8dd3e01659f7dcbf540c966fbe3aff6b40c2be9a83559ff17b0b8
+Installed-Size: 3206
+Filename: luci-app-zerotier_1.0-15_all.ipk
+Size: 3962
+SHA256sum: cf370cb110712df5f5bfd92cb1179ca0aa03c48ad8df2be56acae64278953707
 Description:  LuCI for Zerotier
 
 Package: luci-i18n-accesscontrol-zh-cn
-Version: 1-6
+Version: 1-11
 Depends: libc, libssp, librt, libpthread, luci-app-accesscontrol
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-accesscontrol
 Section: luci
 Architecture: all
-Installed-Size: 772
-Filename: luci-i18n-accesscontrol-zh-cn_1-6_all.ipk
-Size: 1584
-SHA256sum: fa4d1d8f18e931fb66bfed1dbdc56b59b8cf2b280de865e30386ded7a1f4cc97
+Installed-Size: 892
+Filename: luci-i18n-accesscontrol-zh-cn_1-11_all.ipk
+Size: 1716
+SHA256sum: 2779f3d17601f55242e5d3a87c3ca3738d07e2650438b37e18ce6501d2844d63
 Description:  Translation for luci-app-accesscontrol - 中文 (Chinese)
 
 Package: luci-i18n-adbyby-plus-zh-cn
@@ -4811,15 +4852,15 @@ SHA256sum: fcfbda0d19f8ac78e90679ea5e6ec3ffd040e61f0907a4b192140aed8f10b829
 Description:  Translation for luci-app-adbyby-plus - 中文 (Chinese)
 
 Package: luci-i18n-amule-zh-cn
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-amule
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-amule
 Section: luci
 Architecture: all
 Installed-Size: 3606
-Filename: luci-i18n-amule-zh-cn_git-19.134.62305-ac518f4-1_all.ipk
-Size: 4414
-SHA256sum: 0d525aabed9471b26fa4b89d1ed26201dd40837464e16a60c61915fe4e2950c0
+Filename: luci-i18n-amule-zh-cn_git-19.170.36760-c3eb916-1_all.ipk
+Size: 4412
+SHA256sum: 9b334a1514e7c6fac5a4d733291612c156b1ef92084d162b6617283233c089f1
 Description:  Translation for luci-app-amule - 中文 (Chinese)
 
 Package: luci-i18n-arpbind-zh-cn
@@ -4847,29 +4888,29 @@ SHA256sum: 8ffbc43510053db339f7bc370b7bd5b8ca0eb29e66c194b40a7bdeded0187cbd
 Description:  Translation for luci-app-autoreboot - 中文 (Chinese)
 
 Package: luci-i18n-bonding-de
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-proto-bonding
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-proto-bonding
 Section: luci
 Maintainer: Helge Mader <ma@dev.tdt.de>
 Architecture: all
 Installed-Size: 3741
-Filename: luci-i18n-bonding-de_git-19.134.62305-ac518f4-1_all.ipk
-Size: 4578
-SHA256sum: c9cb9c66937bc637099a503a1861759886383f14da41736087775aa8362ecdba
+Filename: luci-i18n-bonding-de_git-19.170.36760-c3eb916-1_all.ipk
+Size: 4575
+SHA256sum: 96f00fbbd5c28ba95ebf99b85b27ea47136a3655e224347e75cdd1c02545cf2c
 Description:  Translation for luci-proto-bonding - Deutsch (German)
 
 Package: luci-i18n-bonding-en
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-proto-bonding
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-proto-bonding
 Section: luci
 Maintainer: Helge Mader <ma@dev.tdt.de>
 Architecture: all
 Installed-Size: 306
-Filename: luci-i18n-bonding-en_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1153
-SHA256sum: 95ae023eb6d2ac764cb189a2d57cf1c28126d158e6d12bd918675cc75758ff9f
+Filename: luci-i18n-bonding-en_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1151
+SHA256sum: f5e6f761d598ad2e6bb4bcdb88624349a910e95f7d70afab16a471ff106847ac
 Description:  Translation for luci-proto-bonding - English
 
 Package: luci-i18n-dnsforwarder-zh-cn
@@ -4933,6 +4974,18 @@ Filename: luci-i18n-ipsec-vpnd-zh-cn_1.0-7_all.ipk
 Size: 1720
 SHA256sum: 5b3b85200d45e5a34a7e48f0d98a130631ef0060cca59edfa5466aad3fc998b4
 Description:  Translation for luci-app-ipsec-vpnd - 中文 (Chinese)
+
+Package: luci-i18n-kodexplorer-zh-cn
+Version: 1.0-5-20190518
+Depends: libc, libssp, librt, libpthread, luci-app-kodexplorer
+Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-kodexplorer
+Section: luci
+Architecture: all
+Installed-Size: 407
+Filename: luci-i18n-kodexplorer-zh-cn_1.0-5-20190518_all.ipk
+Size: 1228
+SHA256sum: d2461b805277ee9f489afb6f17b29b3ccf5a3341ce556aa441f282dbac250f1b
+Description:  Translation for luci-app-kodexplorer - 中文 (Chinese)
 
 Package: luci-i18n-mwan3helper-zh-cn
 Version: 1-2
@@ -5030,6 +5083,18 @@ Size: 1786
 SHA256sum: db06fca1a665810b5bee38f4cc2274387114069115d7f334dbeadb5cb64f4447
 Description:  Translation for luci-app-pptp-server - 中文 (Chinese)
 
+Package: luci-i18n-qbittorrent-zh-cn
+Version: 1.0-2
+Depends: libc, libssp, librt, libpthread, luci-app-qbittorrent
+Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-qbittorrent
+Section: luci
+Architecture: all
+Installed-Size: 729
+Filename: luci-i18n-qbittorrent-zh-cn_1.0-2_all.ipk
+Size: 1482
+SHA256sum: e383a3f0933aec66ee8970eec216990e1be3292ceaa129d3cee1be390ef84902
+Description:  Translation support for luci-app-qbittorrent - 简体中文 (Simplified Chinese)
+
 Package: luci-i18n-ramfree-zh-cn
 Version: 1.0-1
 Depends: libc, libssp, librt, libpthread, luci-app-ramfree
@@ -5043,303 +5108,303 @@ SHA256sum: 5f4525f738bca2bd77d9871394043ad7977e95c2c03e69bebb6e8733e2baa808
 Description:  Translation for luci-app-ramfree - 中文 (Chinese)
 
 Package: luci-i18n-samba4-ca
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1017
-Filename: luci-i18n-samba4-ca_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1842
-SHA256sum: ee9af44edd45e863600303eba9bf8fb0283d321c153a981b6c1b034e29f2f1fa
+Filename: luci-i18n-samba4-ca_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1841
+SHA256sum: 039b7ef5a0f33dbe14ddfa0a4b29ca8d0897f58081bd7ef74720dac2b55d10cf
 Description:  Translation for luci-app-samba4 - Català (Catalan)
 
 Package: luci-i18n-samba4-cs
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1062
-Filename: luci-i18n-samba4-cs_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1896
-SHA256sum: b744728701dee6070fc51de13426b7dbeb90598f95fe2abe955e39399e8c2405
+Filename: luci-i18n-samba4-cs_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1887
+SHA256sum: c84cf8dac68282cc74a884aec710f2f5c98fd09b1245ad3f1ab8274c65fdd8fa
 Description:  Translation for luci-app-samba4 - Čeština (Czech)
 
 Package: luci-i18n-samba4-de
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1214
-Filename: luci-i18n-samba4-de_git-19.134.62305-ac518f4-1_all.ipk
-Size: 2048
-SHA256sum: 02ef561a5a6027eda2c45858d3c24bb7ca7eaadf51f94bef9acde3ae5176c423
+Filename: luci-i18n-samba4-de_git-19.170.36760-c3eb916-1_all.ipk
+Size: 2049
+SHA256sum: 4c0e2ce433927361984582648874cad658b4034981d63177d9ade372a4508f9f
 Description:  Translation for luci-app-samba4 - Deutsch (German)
 
 Package: luci-i18n-samba4-el
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 394
-Filename: luci-i18n-samba4-el_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1232
-SHA256sum: 8aa2bb77cd8cb8e4523635a14b459d52cce8ffbeb34480ef2824cd02531a5c1a
+Filename: luci-i18n-samba4-el_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1231
+SHA256sum: 00a0020d6e3b960708c61e3a2360d495df058538c8da2544c8fe4489e56c0931
 Description:  Translation for luci-app-samba4 - Ελληνικά (Greek)
 
 Package: luci-i18n-samba4-en
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 612
-Filename: luci-i18n-samba4-en_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1425
-SHA256sum: ffa3fb0b6f1c9384c1a4183664265d6eda90d3ec945301c7f64178abe5a53922
+Filename: luci-i18n-samba4-en_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1426
+SHA256sum: 6b553f2a943d3aaf64892ea6a666b6b93a0b78cb826f08d270d46456ed5ede4e
 Description:  Translation for luci-app-samba4 - English
 
 Package: luci-i18n-samba4-es
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1002
-Filename: luci-i18n-samba4-es_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1829
-SHA256sum: d9a9b9aea3de2b318f0c7177403c933c00ea465d2ec727440efa6751df602946
+Filename: luci-i18n-samba4-es_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1827
+SHA256sum: 910e22bb69d8897598144b2962edf8bc9644510fd757b3ed597361a3a3af3c2f
 Description:  Translation for luci-app-samba4 - Español (Spanish)
 
 Package: luci-i18n-samba4-fr
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1030
-Filename: luci-i18n-samba4-fr_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1856
-SHA256sum: d5105fd2ed083c7c27dfd736e98bf5f55ff7aa78bb0d2ee9c7ea398a9d4bc9bc
+Filename: luci-i18n-samba4-fr_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1857
+SHA256sum: 6a659b2d1e24f87d45f33a2310d653a99219393817df346c4a623251a88c74be
 Description:  Translation for luci-app-samba4 - Français (French)
 
 Package: luci-i18n-samba4-he
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 336
-Filename: luci-i18n-samba4-he_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1177
-SHA256sum: d89744919fb5cb655ab7379ac34b86098a85489274b7a5eb8c88f6dbde45b521
+Filename: luci-i18n-samba4-he_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1178
+SHA256sum: 450fc727aa89ecafc22ebc529557fe6eb617bc2817b97c158be427e617cdc0f6
 Description:  Translation for luci-app-samba4 - עִבְרִית (Hebrew)
 
 Package: luci-i18n-samba4-hu
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1076
-Filename: luci-i18n-samba4-hu_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1902
-SHA256sum: f604ccaf465d06255d5cc1ac8e200b4619a26bbb1d5f30c8d5f63955d584a725
+Filename: luci-i18n-samba4-hu_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1903
+SHA256sum: 2166a1b926cf3499645dac303fce88551a39cc428b9048ead2fcf2940a8c9c4c
 Description:  Translation for luci-app-samba4 - Magyar (Hungarian)
 
 Package: luci-i18n-samba4-it
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1082
-Filename: luci-i18n-samba4-it_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1898
-SHA256sum: e4203ca2c49405a0f28e1b0dacedab6247f32e909770ed45c9162b3b3a868ba9
+Filename: luci-i18n-samba4-it_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1903
+SHA256sum: 66ab86aa51d7525714bd5c15012524570bba82e821fd2d3e7e61c0262653ac8a
 Description:  Translation for luci-app-samba4 - Italiano (Italian)
 
 Package: luci-i18n-samba4-ja
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1298
-Filename: luci-i18n-samba4-ja_git-19.134.62305-ac518f4-1_all.ipk
-Size: 2149
-SHA256sum: 12de9a4018da68695fdc06321fb124a94802c49aa0faf635011bb647b169273a
+Filename: luci-i18n-samba4-ja_git-19.170.36760-c3eb916-1_all.ipk
+Size: 2145
+SHA256sum: 8591af2acb9ff15b2bb22060f163e17717da2fcd83fb162a4314de353ea5eeb7
 Description:  Translation for luci-app-samba4 - 日本語 (Japanese)
 
 Package: luci-i18n-samba4-ms
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 318
-Filename: luci-i18n-samba4-ms_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1140
-SHA256sum: a10de39a20b4ba59e1d220b0ea896872d2cf24da5c97a859c1cf7b5f76823fb1
+Filename: luci-i18n-samba4-ms_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1141
+SHA256sum: 74b144f0b5382cc006349911e320e1df363c558866567315b5290a05e2e082b5
 Description:  Translation for luci-app-samba4 - Bahasa Melayu (Malay)
 
 Package: luci-i18n-samba4-no
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 988
-Filename: luci-i18n-samba4-no_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1810
-SHA256sum: 42eb58d414e3ef37edeccd3e13eb810291ee453d3d8ec355aabd6c66daccbee9
+Filename: luci-i18n-samba4-no_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1806
+SHA256sum: de4708ab13fd0e5b5b4e9ecae6675f2e3c21280876fe7cb5041f1fdb430a0d79
 Description:  Translation for luci-app-samba4 - Norsk (Norwegian)
 
 Package: luci-i18n-samba4-pl
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1068
-Filename: luci-i18n-samba4-pl_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1885
-SHA256sum: 51ccfc6dc1e1c7eb5f6fcdad678a864cb2d76ed93742d83a2097a4e6ae7d6563
+Filename: luci-i18n-samba4-pl_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1886
+SHA256sum: d379118d4b5fbb8311c05cf1c17188e5928384b213a71528c275c4652d0b61d5
 Description:  Translation for luci-app-samba4 - Polski (Polish)
 
 Package: luci-i18n-samba4-pt-br
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1502
-Filename: luci-i18n-samba4-pt-br_git-19.134.62305-ac518f4-1_all.ipk
-Size: 2356
-SHA256sum: ca9bd7768881532be90ed042e8c4187d41372ad72debab99c91268f8c6e8a614
+Filename: luci-i18n-samba4-pt-br_git-19.170.36760-c3eb916-1_all.ipk
+Size: 2355
+SHA256sum: d0cd83a806986aa4adc537bcb4a1e04ba983d2a5f7aa51406f5b26b9d1c81a01
 Description:  Translation for luci-app-samba4 - Português do Brasil (Brazialian Portuguese)
 
 Package: luci-i18n-samba4-pt
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1038
-Filename: luci-i18n-samba4-pt_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1866
-SHA256sum: 45f85f348b82802a4548d21df931d9b81be5c22aaa8b82522a8bfcbe95573dee
+Filename: luci-i18n-samba4-pt_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1864
+SHA256sum: 7eb3b60c4b702e80b5873d1cdae9d7de1af4c98c551007cae33ab7acb1129f20
 Description:  Translation for luci-app-samba4 - Português (Portuguese)
 
 Package: luci-i18n-samba4-ro
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 986
-Filename: luci-i18n-samba4-ro_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1817
-SHA256sum: f0b16c01594c86c3ae75c42f5e923d273c26f20ca784f2b6dea499b2b6fa408d
+Filename: luci-i18n-samba4-ro_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1816
+SHA256sum: be8a940efe4421325f0ff9b462436b5ccc7ac88da4e9e6c7ca03a3a9dcbde0c2
 Description:  Translation for luci-app-samba4 - Română (Romanian)
 
 Package: luci-i18n-samba4-ru
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1275
-Filename: luci-i18n-samba4-ru_git-19.134.62305-ac518f4-1_all.ipk
-Size: 2124
-SHA256sum: 9fc47d59fbe0069bcb48194e703857311a389578608d35f9f4a90fe1d516e369
+Filename: luci-i18n-samba4-ru_git-19.170.36760-c3eb916-1_all.ipk
+Size: 2126
+SHA256sum: 8410729e0e41f2c824e2ab37a8fd3731f55959fae1b39f25a660e307066ec10b
 Description:  Translation for luci-app-samba4 - Русский (Russian)
 
 Package: luci-i18n-samba4-sk
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 320
-Filename: luci-i18n-samba4-sk_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1143
-SHA256sum: fbc1ea0ca4022321c136370ff9710622bb197660851b39f9f878b7da30ff7c71
+Filename: luci-i18n-samba4-sk_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1144
+SHA256sum: c64f1813cb2b61f5a198d90cf9bcbb05b6a53ebd145b2c1d05ddcc58bd338d09
 Description:  Translation for luci-app-samba4 - Slovenčina (Slovak)
 
 Package: luci-i18n-samba4-sv
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 846
-Filename: luci-i18n-samba4-sv_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1676
-SHA256sum: 1d914cb10c4a56435963e94799801b7bcabbbfc550b7b0e7d487c026b3b36a75
+Filename: luci-i18n-samba4-sv_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1675
+SHA256sum: 53fd323b58bf10ce7e61242511792d6e3e29c06b34318c4b10a326c005fe4abc
 Description:  Translation for luci-app-samba4 - Svenska (Swedish)
 
 Package: luci-i18n-samba4-tr
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 320
-Filename: luci-i18n-samba4-tr_git-19.134.62305-ac518f4-1_all.ipk
-Size: 1141
-SHA256sum: a464116bed60d28fcfefe0d44addf3d86b2e9c777f7bd17636d57b1a5ea9f594
+Filename: luci-i18n-samba4-tr_git-19.170.36760-c3eb916-1_all.ipk
+Size: 1143
+SHA256sum: 2ec86ef0cb8f07101b3c6ce9427540870baf7e397d564d7126c2f099a6d58103
 Description:  Translation for luci-app-samba4 - Türkçe (Turkish)
 
 Package: luci-i18n-samba4-uk
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1213
-Filename: luci-i18n-samba4-uk_git-19.134.62305-ac518f4-1_all.ipk
-Size: 2077
-SHA256sum: b70ae77b694999603a4845a4843cb798f6921fe7351d8fbf861488ec2cecbcb7
+Filename: luci-i18n-samba4-uk_git-19.170.36760-c3eb916-1_all.ipk
+Size: 2073
+SHA256sum: 896d5cf7f7411c5516208884ae019e78a026980d1670439793db107b4c2aa899
 Description:  Translation for luci-app-samba4 - Українська (Ukrainian)
 
 Package: luci-i18n-samba4-vi
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 799
-Filename: luci-i18n-samba4-vi_git-19.134.62305-ac518f4-1_all.ipk
+Filename: luci-i18n-samba4-vi_git-19.170.36760-c3eb916-1_all.ipk
 Size: 1646
-SHA256sum: fa7dff11b6da083ca9014f89088caedc105fe28bd815c2df73d443e63c8d4f79
+SHA256sum: 4a603cb28c6d6310fa0946e35d1454d7ebfed359a8fbfa44181aa6aed58808af
 Description:  Translation for luci-app-samba4 - Tiếng Việt (Vietnamese)
 
 Package: luci-i18n-samba4-zh-cn
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1442
-Filename: luci-i18n-samba4-zh-cn_git-19.134.62305-ac518f4-1_all.ipk
-Size: 2281
-SHA256sum: a38c8537ed77ec710290b5adb8a1c041c634320ec5bad4ef65645f8dc61d2cf5
+Filename: luci-i18n-samba4-zh-cn_git-19.170.36760-c3eb916-1_all.ipk
+Size: 2285
+SHA256sum: 8b0e450903f2981a89c9a315fd41c78ff13519cff7fa7ca9e97ba938c5083eb3
 Description:  Translation for luci-app-samba4 - 中文 (Chinese)
 
 Package: luci-i18n-samba4-zh-tw
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, luci-app-samba4
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-samba4
 Section: luci
 Architecture: all
 Installed-Size: 1455
-Filename: luci-i18n-samba4-zh-tw_git-19.134.62305-ac518f4-1_all.ipk
-Size: 2314
-SHA256sum: d80ecfc735af21fb0cd909f77d8e136b3bbe0d6ae084ac896ad8499a04278332
+Filename: luci-i18n-samba4-zh-tw_git-19.170.36760-c3eb916-1_all.ipk
+Size: 2307
+SHA256sum: f3f347dbcc3640e616bbdd94c9e23b3d71169dc77b1b92ebe2799ca66ff696e0
 Description:  Translation for luci-app-samba4 - 臺灣華語 (Taiwanese)
 
 Package: luci-i18n-ssrserver-python-zh-cn
@@ -5439,15 +5504,15 @@ SHA256sum: 9c71b19ed33643750a6be54e4918ee2ccbffac069b7631a49ab762643a91f91f
 Description:  Translation for luci-app-wrtbwmon - 中文 (Chinese)
 
 Package: luci-i18n-zerotier-zh-cn
-Version: 1.0-13
+Version: 1.0-15
 Depends: libc, libssp, librt, libpthread, luci-app-zerotier
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-app-zerotier
 Section: luci
 Architecture: all
 Installed-Size: 774
-Filename: luci-i18n-zerotier-zh-cn_1.0-13_all.ipk
-Size: 1599
-SHA256sum: 9ce83c7f61fb25d891a56e892cb0d022b20ffec4e8b6cb94c434cb35f9ad213f
+Filename: luci-i18n-zerotier-zh-cn_1.0-15_all.ipk
+Size: 1601
+SHA256sum: a6722514f550097c838446ec727ac734933bc0fb8d4caba09d5a0e80960e21ab
 Description:  Translation for luci-app-zerotier - 中文 (Chinese)
 
 Package: luci-lib-fs
@@ -5463,16 +5528,16 @@ SHA256sum: effe5288de987a70f3a9b04dfe0b1943eaf9c17c55dcff0d55fee401ede15eb5
 Description:  luci-lib-fs
 
 Package: luci-proto-bonding
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread, proto-bonding
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-proto-bonding
 Section: luci
 Maintainer: Helge Mader <ma@dev.tdt.de>
 Architecture: all
 Installed-Size: 4786
-Filename: luci-proto-bonding_git-19.134.62305-ac518f4-1_all.ipk
-Size: 5537
-SHA256sum: 4217ce4e5746c1849158085b28583f6af51422e2dd15273aaae31bc8095cde12
+Filename: luci-proto-bonding_git-19.170.36760-c3eb916-1_all.ipk
+Size: 5541
+SHA256sum: f4c5d71c4c7278657ae456df08d5a14036ad67364ecda3fc091bc4c4be3f6fb7
 Description:  Support for Link Aggregation (Channel Bonding)
 
 Package: luci-theme-argon
@@ -5488,15 +5553,15 @@ SHA256sum: b519c3144ccbdabed28d6b82e83bf0e583dda1eced78a568188d63b24d76c0c1
 Description:  Argon Theme
 
 Package: luci-theme-netgear
-Version: git-19.134.62305-ac518f4-1
+Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread
 Source: /home/wang/Desktop/lede-lean/package/lean/luci-theme-netgear
 Section: luci
 Architecture: all
 Installed-Size: 232818
-Filename: luci-theme-netgear_git-19.134.62305-ac518f4-1_all.ipk
-Size: 233706
-SHA256sum: 523348590d8b4f8c3c1ac497bec3daae5fb462f3952b63ad0d58ec50e24d3681
+Filename: luci-theme-netgear_git-19.170.36760-c3eb916-1_all.ipk
+Size: 233704
+SHA256sum: 2012ac11cb9f52d9b1f175d61a8758620b17d59b7e60902fe814697d12939d54
 Description:  Netgear Theme
 
 Package: maccalc
@@ -6351,6 +6416,23 @@ Filename: r8169-firmware_2017-09-06-a61ac5cf-1_x86_64.ipk
 Size: 17284
 SHA256sum: 737b546be332d07a5adc2930e38e552a227d68c334b513a22284eb3dbe12e434
 Description:  RealTek RTL8169 firmware
+
+Package: rblibtorrent
+Version: 1.1.11-1
+Depends: libc, libssp, librt, libpthread, libstdcpp, libopenssl, boost, boost-system, boost-chrono, boost-random
+Source: /home/wang/Desktop/lede-lean/package/lean/rblibtorrent
+License: BSD
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Arvid Norberg <arvid@libtorrent.org>
+Architecture: x86_64
+Installed-Size: 1185907
+Filename: rblibtorrent_1.1.11-1_x86_64.ipk
+Size: 1183827
+SHA256sum: fc33ac1aded59a2404d0dfd19e3e35ebc6b1ee433cb3b70e33e950400b649a78
+Description:  Rasterbar libtorrent is a C++ library that aims to be a good alternative to
+ all the other bittorrent implementations around. It is a library and not a
+ full featured client, although it comes with a working example client.
 
 Package: rdma
 Version: 4.16.0-8
