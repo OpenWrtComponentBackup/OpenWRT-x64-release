@@ -4895,6 +4895,17 @@ Size: 70216
 SHA256sum: b519c3144ccbdabed28d6b82e83bf0e583dda1eced78a568188d63b24d76c0c1
 Description:  Argon Theme
 
+Package: luci-theme-butongwifi
+Version: git-19.021.08076-5ad9685-1
+Depends: libc, libssp, librt, libpthread
+Section: luci
+Architecture: all
+Installed-Size: 794701
+Filename: luci-theme-butongwifi_git-19.021.08076-5ad9685-1_all.ipk
+Size: 795148
+SHA256sum: eee8772298522136f97c84f6b2c450eeddf92c1872d5b106862e1e8495f9d63f
+Description:  Butongwifi Theme
+
 Package: luci-theme-netgear
 Version: git-19.170.36760-c3eb916-1
 Depends: libc, libssp, librt, libpthread
@@ -4905,6 +4916,28 @@ Filename: luci-theme-netgear_git-19.170.36760-c3eb916-1_all.ipk
 Size: 233704
 SHA256sum: 2012ac11cb9f52d9b1f175d61a8758620b17d59b7e60902fe814697d12939d54
 Description:  Netgear Theme
+
+Package: luci-theme-purple
+Version: git-19.060.35820-9b43770-1
+Depends: libc, libssp, librt, libpthread
+Section: luci
+Architecture: all
+Installed-Size: 50041
+Filename: luci-theme-purple_git-19.060.35820-9b43770-1_all.ipk
+Size: 50953
+SHA256sum: 9c64fa3d343e6ae65b80ec483ee4398b7b505a7f09f976d2ff1098729de71adb
+Description:  Purple Theme
+
+Package: luci-theme-rosy
+Version: git-19.158.24585-d2c555e-1
+Depends: libc, libssp, librt, libpthread
+Section: luci
+Architecture: all
+Installed-Size: 104653
+Filename: luci-theme-rosy_git-19.158.24585-d2c555e-1_all.ipk
+Size: 105505
+SHA256sum: a9e969a0df1e9614f651e3a088e16bfff662c05cff253f0d884ac806eee44445
+Description:  Rosy Theme
 
 Package: maccalc
 Version: 1
